@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TTV</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut-icon" href="images/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
   <body>
 
     <nav class="navigation">
-      <a href="#" class="logo">
+      <a href="index.html" class="logo">
         <img src="images/TTV-logo.png" alt="logo" />
       </a>
 
@@ -24,7 +24,7 @@
       </label>
 
       <ul class="menu">
-        <li><a href="#">Tank News</a></li>
+        <li><a href="#">Tanks</a></li>
         <li><a href="#">Tankfest 2024</a></li>
         <li><a href="#">About Us</a></li>
     </ul>
@@ -73,6 +73,9 @@
                 <div class="modal-content animate" id="modal-content">
                     <div id="login-form">
                         <div class="container">
+    
+                          <h3>Login / Sign up to access website</h3>
+                          <br>
         
                             <label for="login-username-email"><b>Username or Email</b></label>
                             <input type="text" placeholder="Enter Username" id="login-username-email" required>
@@ -113,74 +116,195 @@
     </nav>
     <!--navigation-end-->
 
-<!--main-news-->
-<section id="news-details">
-  <div class="main-news-text">
-
-    <span class="category">Tank Designs</span>
-    <strong>K2 Black Panther</strong>
-    <p>TTV</p>
-    <p>Published November 21, 2024 10:26 AM PHT | Updated November 21, 2024 12:00 PM PHT</p>
-
-    <div class="main-news-img">
-      <img src="images/K2-Black-Panther.png">
-    </div>
-    <p>K2 Black Panthers of the 11th Maneuver Division of the Republic of Korea Army in tank field training</p>
-
-    <div class="m-news-text">
-      <span class="m-box-details">
-        K2 Black Panther is a South Korean fourth-generation main battle tank (MBT), designed by the Agency for 
-        Defense Development and manufactured by Hyundai Rotem. 
-        <br>
-        <br>
-        The tank's design began in the 1990s to meet the strategic 
-        requirements of the Republic of Korea Army's reform for three-dimensional, high-speed maneuver warfare based 
-        on use of network-centric warfare.
-         
-        <div class="main-news-img">
-          <img src="images/K2-Black-Panther-2.jpg">
+    <section id="news-details">
+      <div class="main-news-text">
+    
+        <strong>Welcome to Tanks TV</strong>  
+      
+        <div class="m-news-text">
+          <span class="m-box-details">
+            Step into the world of tanks—where history, engineering, and passion collide! Whether you're a 
+            history buff, a model builder, or just fascinated by the power and precision of these incredible 
+            machines, you're in the right place. 
+            <br>
+            <br>
+            Explore, share, and connect with fellow tank enthusiasts from around the globe. 
+            We're glad you're here—roll in and join the adventure!
+          </span>
         </div>
-        <p>A platoon of K2 tanks in live fire exercise</p>
 
-        <br>
-        Mass production began in 2013, and the first K2s were deployed with the South Korean armed forces in July 2014.
-        <br>
-        The K2 Black Panther is recognized as one of the most capable battle tanks in the world, featuring an advanced 
-        fire-control system, in-arm suspension, and a radar, laser rangefinder, and crosswind sensor for lock-on targeting.
+      </div>
+    
+    </section><!--news-details-end-->
 
-        <div class="main-news-img">
-          <img src="images/K2-Black-Panther-3.jpg">
-        </div>
-        <p>The K2 is equipped with an advanced fire-control system linked to an Extremely High Frequency (EHF) 
-          L-band Pulsed Doppler Radar system deployed on the frontal arc of the turret</p>
+    <!-- Collections -->
+    <section class="collection">
+      <!--heading-->
+      <div class="collection-heading">
+        <h3>Tank Blogs</h3>
+      </div>
 
-        <br>
-        Its thermographic camera tracks targets up to 9.8 km, and its millimetre-band radar acts as a Missile Approach Warning System, 
-        enhancing situational awareness. 
-        <br>
-        <br>
-        The K2's autoloader reduces crew size by 25%, providing a faster rate of fire, better fuel efficiency, 
-        and lower maintenance costs compared to tanks like the Abrams and Leopard. 
-        <br>
-        <br>
-        Additionally, the K2 can operate in indirect fire mode, offering key advantages over Western designs. Known for its cost-effectiveness, 
-        the K2 is a competitive alternative to the Abrams and Leopard, with similar capabilities at a lower operational cost.   
-        <br>
-        <br>
-        The K2's computer system also deploys smoke grenades to counter incoming projectiles.
-
-        <h2>K-2 Black Panther Main Battle Tanks Live Firing Training</h2>
+      <div class="r-collection-container">
         
-        <iframe class="video-frame"
-        src="https://www.youtube.com/embed/MWnzF2Je1qw?playlist=MWnzF2Je1qw&loop=1&autoplay=1&mute=1">
-        </iframe>
+        <!--box1-->
+        <div class="r-collection-box">
+          <div class="r-collection-img">
+            <img src="images/K-2-Black-Panther.png"/>
+          </div>
+          <div class="r-collection-text">
+            <!--TITLE-->
+            <a href="page1.html" class="collection-box-p-name">
+              K2 Black Panther
+            </a>
+          </div>
+        </div>
 
-      </span>
-    </div>
+        <!--box2-->
+        <div class="r-collection-box">
+          <div class="r-collection-img">
+            <img src="images/T-90M.png"/>
+          </div>
+          <div class="r-collection-text">
+            <!--TITLE-->
+            <a href="collection-page.html" class="collection-box-p-name">
+              T-90M
+            </a>
+          </div>
+        </div>
 
-  </div>
+        <!--box3-->
+        <div class="r-collection-box">
+          <div class="r-collection-img">
+            <img src="images/Leopard-2.png"/>
+          </div>
+          <div class="r-collection-text">
+            <!--TITLE-->
+            <a href="collection-page.html" class="collection-box-p-name">
+              Leopard 2
+            </a>
+          </div>
+        </div>
 
-</section><!--news-details-end-->
+        <!--box4-->
+        <div class="r-collection-box">
+          <div class="r-collection-img">
+            <img src="images/M1-Abrams.png"/>
+          </div>
+          <div class="r-collection-text">
+            <!--TITLE-->
+            <a href="collection-page.html" class="collection-box-p-name">
+              M1 Abrams
+            </a>
+          </div>
+        </div>
+
+        <!--box5-->
+        <div class="r-collection-box">
+          <div class="r-collection-img">
+            <img src="images/Type 10.png"/>
+          </div>
+          <div class="r-collection-text">
+            <!--TITLE-->
+            <a href="collection-page.html" class="collection-box-p-name">
+              Type 10
+            </a>
+          </div>
+        </div>
+        
+        <!--box6-->
+        <div class="r-collection-box">
+          <div class="r-collection-img">
+            <img src="images/type99A-removebg-preview.png"/>
+          </div>
+          <div class="r-collection-text">
+            <!--TITLE-->
+            <a href="collection-page.html" class="collection-box-p-name">
+              Type 99
+            </a>
+          </div>
+        </div>
+
+        <!--box7-->
+        <div class="r-collection-box">
+          <div class="r-collection-img">
+            <img src="images/STRV-122.png"/>
+          </div>
+          <div class="r-collection-text">
+            <!--TITLE-->
+            <a href="collection-page.html" class="collection-box-p-name">
+              STV 122
+            </a>
+          </div>
+        </div>
+
+        <!--box8-->
+        <div class="r-collection-box">
+          <div class="r-collection-img">
+            <img src="images/T-80U.png"/>
+          </div>
+          <div class="r-collection-text">
+            <!--TITLE-->
+            <a href="collection-page.html" class="collection-box-p-name">
+              T-80
+            </a>
+          </div>
+        </div>
+
+        <!--box9-->
+        <div class="r-collection-box">
+          <div class="r-collection-img">
+            <img src="images/Chally-2.png"/>
+          </div>
+          <div class="r-collection-text">
+            <!--TITLE-->
+            <a href="collection-page.html" class="collection-box-p-name">
+              Challenger 2
+            </a>
+          </div>
+        </div>
+
+        <!--box10-->
+        <div class="r-collection-box">
+          <div class="r-collection-img">
+            <img src="images/Ariete.png"/>
+          </div>
+          <div class="r-collection-text">
+            <!--TITLE-->
+            <a href="collection-page.html" class="collection-box-p-name">
+              Ariete
+            </a>
+          </div>
+        </div>
+
+        <!--box11-->
+        <div class="r-collection-box">
+          <div class="r-collection-img">
+            <img src="images/Leclerc.png"/>
+          </div>
+          <div class="r-collection-text">
+            <!--TITLE-->
+            <a href="collection-page.html" class="collection-box-p-name">
+              Leclerc
+            </a>
+          </div>
+        </div>
+
+        <!--box12-->
+        <div class="r-collection-box">
+          <div class="r-collection-img">
+            <img src="images/Merkava-4.png"/>
+          </div>
+          <div class="r-collection-text">
+            <!--TITLE-->
+            <a href="collection-page.html" class="collection-box-p-name">
+              Merkava
+            </a>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
 
     <!--footer-->
     <footer>
