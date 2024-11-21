@@ -638,6 +638,7 @@ footer {
         margin: 0px;
         padding: 20px;
         border-bottom: 1px solid #e2e2e26e;
+        text-decoration: none;
     }
 
     .menu-icon {
