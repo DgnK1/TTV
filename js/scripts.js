@@ -1,3 +1,21 @@
+function userDropDown() {
+  document.getElementById("userDropdown").classList.toggle("userShow");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.userDropbtn')) {
+    var userDropdowns = document.getElementsByClassName("userDropdown-content");
+    var i;
+    for (i = 0; i < userDropdowns.length; i++) {
+      var openUserDropdown = userDropdowns[i];
+      if (openUserDropdown.classList.contains('userShow')) {
+        openUserDropdown.classList.remove('userShow');
+      }
+    }
+  }
+}
+
 modal = document.getElementById('id01'),
 overlay = document.getElementById('overlay'); 
 

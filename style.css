@@ -345,6 +345,15 @@ input[type=text], input[type=password] {
     line-height: 1;
 }
 
+.video-frame {
+    width: 100%; 
+    max-width: 800px;
+    height: 500px; 
+    border: none; 
+    display: block; 
+    margin: 20px auto;
+}
+
 /*footer*/
 footer {
     background-color: #141414;

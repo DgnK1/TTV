@@ -15,7 +15,7 @@
 
     <nav class="navigation">
       <a href="#" class="logo">
-        <img src="images/KNTVb.png" alt="logo" />
+        <img src="images/TTV-logo.png" alt="logo" />
       </a>
 
       <input type="checkbox" class="menu-btn" id="menu-btn">
@@ -65,6 +65,50 @@
             </div> 
         </div>
       </div>
+
+      <section class="logInForm">
+        <div id="overlay">
+            <!-- Modal -->
+            <div id="id01" class="modal">
+                <div class="modal-content animate" id="modal-content">
+                    <div id="login-form">
+                        <div class="container">
+        
+                            <label for="login-username-email"><b>Username or Email</b></label>
+                            <input type="text" placeholder="Enter Username" id="login-username-email" required>
+        
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" id="login-password" required>
+        
+                            <button class="logInButton" type="button" onclick="login()">Login</button>
+        
+                            <button class="signUpButton" type="button" onclick="showSignUp()">Sign Up</button>
+        
+                        </div>
+                    </div>
+        
+                    <div id="sign-up-form">
+                        <div class="container">
+        
+                            <label for="new-username"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" id="new-username" required>
+        
+                            <label for="new-email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" id="new-email" required>
+        
+                            <label for="new-password"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" id="new-password" required>
+        
+                            <button class="signUpButton" type="button" onclick="signUp()">Sign Up</button>
+        
+                            <button class="logInButton" type="button" onclick="showLogin()">Back to Login</button>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     </nav>
     <!--navigation-end-->
@@ -124,7 +168,13 @@
         <br>
         <br>
         The K2's computer system also deploys smoke grenades to counter incoming projectiles.
-      </span>
+
+        <h2>K-2 Black Panther Main Battle Tanks Live Firing Training</h2>
+        
+        <iframe class="video-frame"
+        src="https://www.youtube.com/embed/MWnzF2Je1qw?playlist=MWnzF2Je1qw&loop=1&autoplay=1&mute=1">
+        </iframe>
+
       </span>
     </div>
 
