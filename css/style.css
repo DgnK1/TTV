@@ -212,13 +212,17 @@ h3:hover{
 
 /* Log In Form */
 body.login-page {
+    background-color: #000000;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
     display: flex;
-    justify-content: center; 
-    align-items: center;     
-    margin: 0;               
-    background-color: #f0f0f0; 
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
+
 
 body.login-page .logInForm {
     width: 100%;
