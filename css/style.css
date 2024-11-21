@@ -67,6 +67,7 @@ h3:hover{
 .menu li a:hover {
     color: #181818;
     font-weight: 600;
+    text-decoration: none;
 }
 
 .userDropbtn {
@@ -434,7 +435,6 @@ a:hover {
     display: flex;
     flex-direction: column;
     width: 100%;
-    justify-content: center;
     align-items: flex-start;    
 }
 
@@ -638,6 +638,9 @@ footer {
         margin: 0px;
         padding: 20px;
         border-bottom: 1px solid #e2e2e26e;
+    }
+
+    .menu li a:hover{
         text-decoration: none;
     }
 
