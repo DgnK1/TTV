@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TTV</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut-icon" href="images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  </head>
+  <body>
+
+    <nav class="navigation">
+      <a href="main.html" class="logo">
+        <img src="images/TTV-logo.png" alt="logo" />
+      </a>
+
+      <input type="checkbox" class="menu-btn" id="menu-btn">
+      <label for="menu-btn" class="menu-icon">
+        <span class="nav-icon"></span>
+      </label>
+
+      <ul class="menu">
+        <li><a href="#">Tanks</a></li>
+        <li><a href="#">Tankfest 2024</a></li>
+        <li><a href="#">About Us</a></li>
+    </ul>
+
+      <div class="nav-btns">
+        <!-- Search Box -->
+        <input type="checkbox" id="nav-search-btn" />
+        <label for="nav-search-btn" class="nav-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <form action="">
+            <!--close-->
+            <label for="nav-search-btn" class="nav-search-close">
+              <i class="fa-solid fa-xmark"></i>
+            </label>
+            <div class="nav-search-box">
+              <input type="text" placeholder="Search Topic" required />
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </form>
+        </label>
+        
+        <div class="userDropdown">
+
+          <button onclick="userDropDown()" class="userDropbtn">
+            <i class="fa-solid fa-user"></i>
+          </button>
+      
+          <div id="userDropdown" class="userDropdown-content">
+
+            <div class="dropdown-link-box">
+                <div class="dropdown-links">
+                  <ul>
+                    <li><button><a href="#">Profile</a></li></button>
+                    <li><button><a href="#">Settings</a></li></button>
+                    <li><button id="logoutBtn" onclick="logout()">Logout</button></li>
+                  </ul>
+                </div>
+            </div> 
+        </div>
+      </div>
+    </nav>
+    <!--navigation-end-->
+
+    <section id="news-details">
+      <div class="main-news-text">
+    
+        <strong>Welcome to Tanks TV</strong>  
+      
+        <div class="m-news-text">
+          <span class="m-box-details">
+            Step into the world of tanks—where history, engineering, and passion collide! Whether you're a 
+            history buff, a model builder, or just fascinated by the power and precision of these incredible 
+            machines, you're in the right place. 
+            <br>
+            <br>
+            Explore, share, and connect with fellow tank enthusiasts from around the globe. 
+            We're glad you're here—roll in and join the adventure!
+          </span>
+        </div>
+
+      </div>
+    
+    </section><!--news-details-end-->
+
+    <!-- Collections -->
+    <section class="collection">
+      <!--heading-->
+      <div class="collection-heading">
+        <h3>Tank Blogs</h3>
+      </div>
+
+      <div class="r-collection-container">
+        
+        <!--box1-->
+        <div class="r-collection-box">
+          <div class="r-collection-img">
+            <img src="images/K-2-Black-Panther.png"/>
+          </div>
+          <div class="r-collection-text">
+            <!--TITLE-->
+            <a href="page1.html" class="collection-box-p-name">
+              K2 Black Panther
+            </a>
+          </div>
+        </div>
+
+        <!--box2-->
+        <div class="r-collection-box">
+          <div class="r-collection-img">
+            <img src="images/T-90M.png"/>
+          </div>
+          <div class="r-collection-text">
+            <!--TITLE-->
+            <a href="#" class="collection-box-p-name">
+              T-90M
+            </a>
+          </div>
+        </div>
+
+        <!--box3-->
+        <div class="r-collection-box">
+          <div class="r-collection-img">
+            <img src="images/Leopard-2.png"/>
+          </div>
+          <div class="r-collection-text">
+            <!--TITLE-->
+            <a href="#" class="collection-box-p-name">
+              Leopard 2
+            </a>
+          </div>
+        </div>
+
+        <!--box4-->
+        <div class="r-collection-box">
+          <div class="r-collection-img">
+            <img src="images/M1-Abrams.png"/>
+          </div>
+          <div class="r-collection-text">
+            <!--TITLE-->
+            <a href="#" class="collection-box-p-name">
+              M1 Abrams
+            </a>
+          </div>
+        </div>
+
+        <!--box5-->
+        <div class="r-collection-box">
+          <div class="r-collection-img">
+            <img src="images/Type 10.png"/>
+          </div>
+          <div class="r-collection-text">
+            <!--TITLE-->
+            <a href="#" class="collection-box-p-name">
+              Type 10
+            </a>
+          </div>
+        </div>
+        
+        <!--box6-->
+        <div class="r-collection-box">
+          <div class="r-collection-img">
+            <img src="images/type99A-removebg-preview.png"/>
+          </div>
+          <div class="r-collection-text">
+            <!--TITLE-->
+            <a href="#" class="collection-box-p-name">
+              Type 99
+            </a>
+          </div>
+        </div>
+
+        <!--box7-->
+        <div class="r-collection-box">
+          <div class="r-collection-img">
+            <img src="images/STRV-122.png"/>
+          </div>
+          <div class="r-collection-text">
+            <!--TITLE-->
+            <a href="#" class="collection-box-p-name">
+              STRV 122
+            </a>
+          </div>
+        </div>
+
+        <!--box8-->
+        <div class="r-collection-box">
+          <div class="r-collection-img">
+            <img src="images/T-80U.png"/>
+          </div>
+          <div class="r-collection-text">
+            <!--TITLE-->
+            <a href="#" class="collection-box-p-name">
+              T-80
+            </a>
+          </div>
+        </div>
+
+        <!--box9-->
+        <div class="r-collection-box">
+          <div class="r-collection-img">
+            <img src="images/Chally-2.png"/>
+          </div>
+          <div class="r-collection-text">
+            <!--TITLE-->
+            <a href="#" class="collection-box-p-name">
+              Challenger 2
+            </a>
+          </div>
+        </div>
+
+        <!--box10-->
+        <div class="r-collection-box">
+          <div class="r-collection-img">
+            <img src="images/Ariete.png"/>
+          </div>
+          <div class="r-collection-text">
+            <!--TITLE-->
+            <a href="#" class="collection-box-p-name">
+              Ariete
+            </a>
+          </div>
+        </div>
+
+        <!--box11-->
+        <div class="r-collection-box">
+          <div class="r-collection-img">
+            <img src="images/Leclerc.png"/>
+          </div>
+          <div class="r-collection-text">
+            <!--TITLE-->
+            <a href="#" class="collection-box-p-name">
+              Leclerc
+            </a>
+          </div>
+        </div>
+
+        <!--box12-->
+        <div class="r-collection-box">
+          <div class="r-collection-img">
+            <img src="images/Merkava-4.png"/>
+          </div>
+          <div class="r-collection-text">
+            <!--TITLE-->
+            <a href="#" class="collection-box-p-name">
+              Merkava
+            </a>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!--footer-->
+    <footer>
+      <!--footer container start-->
+      <div class="footer-container">
+
+        <!--LINK-->
+        <div class="footer-link-box">
+          <strong>Sections</strong>
+          <div class="footer-links">
+            <ul>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Entertainment</a></li>
+              <li><a href="#">Tank Designs</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-link-box">
+          <strong>Multimedia</strong>
+          <ul>
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Slideshows</a></li>
+            <li><a href="#">Infographics</a></li>
+            <li><a href="#">Digital Specials</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-link-box">
+          <strong>Highlights</strong>
+          <ul>
+            <li><a href="#">Livestream</a></li>
+            <li><a href="#">Fact Check</a></li>
+            <li><a href="#">TTV Corner</a></li> 
+          </ul>
+        </div>
+
+        <div class="footer-subscribe">
+          <strong>Subscribe Now</strong>
+          <div class="subscribe-box">
+            <input type="email" placeholder="Example@gmail.com" required />
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <!--footer container end-->
+
+      <!--bottom-footer-->
+      <div class="footer-bottom">
+        <span class="footer-owner">Made By DennyDespot</span>
+        <span class="copyright">© Copyright 2024</span>
+      </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
