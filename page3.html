@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TTV</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut-icon" href="images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  </head>
+  <body>
+
+    <nav class="navigation">
+      <a href="main.html" onclick="closeModal()" class="logo">
+        <img src="images/TTV-logo.png" alt="logo" />
+      </a>
+
+      <input type="checkbox" class="menu-btn" id="menu-btn">
+      <label for="menu-btn" class="menu-icon">
+        <span class="nav-icon"></span>
+      </label>
+
+      <ul class="menu">
+        <li><a href="#">Tanks</a></li>
+        <li><a href="#">Tankfest 2024</a></li>
+        <li><a href="#">About Us</a></li>
+    </ul>
+
+      <div class="nav-btns">
+        <!-- Search Box -->
+        <input type="checkbox" id="nav-search-btn" />
+        <label for="nav-search-btn" class="nav-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <form action="">
+            <!--close-->
+            <label for="nav-search-btn" class="nav-search-close">
+              <i class="fa-solid fa-xmark"></i>
+            </label>
+            <div class="nav-search-box">
+              <input type="text" placeholder="Search Topic" required />
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </form>
+        </label>
+        
+        <div class="userDropdown">
+
+          <button onclick="userDropDown()" class="userDropbtn">
+            <i class="fa-solid fa-user"></i>
+          </button>
+      
+          <div id="userDropdown" class="userDropdown-content">
+
+            <div class="dropdown-link-box">
+                <div class="dropdown-links">
+                  <ul>
+                    <li><button><a href="#">Profile</a></li></button>
+                    <li><button><a href="#">Settings</a></li></button>
+                    <li><button id="logoutBtn">Logout</button></li>
+                  </ul>
+                </div>
+            </div> 
+        </div>
+      </div>
+
+    </nav>
+    <!--navigation-end-->
+
+<!--main-news-->
+<section id="news-details">
+  <div class="main-news-text">
+
+    <span class="category">Tank Blogs</span>
+    <strong>Leopard 2 - German MBT</strong>
+
+    <div class="main-news-img">
+      <img src="images/page3-1.jpg">
+    </div>
+    <p>Leopard 2A5 main battle tank during a teaching and combat demonstration.</p>
+
+    <div class="m-news-text">
+      <span class="m-box-details">
+        The Leopard 2 is a third generation German main battle tank (MBT). Developed by Krauss-Maffei in the 1970s, 
+        the tank entered service in 1979 and replaced the earlier Leopard 1 as the main battle tank of the West German 
+        army. 
+        <br>
+        <br>
+        Various iterations of the Leopard 2 continue to be operated by the armed forces of Germany, as well as 13 other 
+        European countries, and several non-European countries, including Canada, Chile, Indonesia, and Singapore. 
+        <br>
+        <br>
+        Some operating countries have licensed the Leopard 2 design for local production and domestic development.
+         
+        <div class="main-news-img">
+          <img src="images/page3-2.jpg">
+        </div>
+        <p>Dutch Leopard 2A4 tanks, 1997</p>
+
+        <br>
+        There are two main development tranches of the Leopard 2. The first encompasses tanks produced up to the 
+        Leopard 2A4 standard and are characterised by their vertically faced turret armour.
+        
+        <br>
+        <br>
+        The second tranche, from Leopard 2A5 onwards, has an angled, arrow-shaped, turret appliqué armour, 
+        together with other improvements. The main armament of all Leopard 2 tanks is a smoothbore 120 mm cannon 
+        made by Rheinmetall.
+
+        <div class="main-news-img">
+          <img src="images/page3-3.jpg">
+        </div>
+        <p>A German Army Leopard 2A6, assigned to the 104th Panzer Battalion conducting high-speed manoeuvres</p>
+
+        <br>
+        This is operated with a digital fire control system, laser rangefinder, and advanced night vision and sighting 
+        equipment. The tank is powered by a V12 twin-turbo diesel engine made by MTU Friedrichshafen. 
+
+        <br>
+        <br>
+        In the 1990s, the Leopard 2 was used by the German Army on peacekeeping operations in Kosovo. In the 2000s, 
+        Dutch, Danish and Canadian forces deployed their Leopard 2 tanks in the War in Afghanistan as part of their 
+        contribution to the International Security Assistance Force.
+
+        <br>
+        <br>
+        In the 2010s, Turkish Leopard 2 tanks saw action in Syria. Since 2023, Ukrainian Leopard 2 tanks are 
+        seeing action in the Russo-Ukrainian war.  
+
+        <h2>LEOPARD TANK In FIRING ACTION! (During Annual Training Event)</h2>
+        
+        <iframe class="video-frame"
+        src="https://www.youtube.com/embed/FYEQ_9Vjo9Y?playlist=FYEQ_9Vjo9Y&loop=1&autoplay=1&mute=1">
+        </iframe>
+
+      </span>
+    </div>
+
+  </div>
+
+</section><!--news-details-end-->
+
+    <!--footer-->
+    <footer>
+      <!--footer container start-->
+      <div class="footer-container">
+
+        <!--LINK-->
+        <div class="footer-link-box">
+          <strong>Sections</strong>
+          <div class="footer-links">
+            <ul>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Entertainment</a></li>
+              <li><a href="#">Tank Designs</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-link-box">
+          <strong>Multimedia</strong>
+          <ul>
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Slideshows</a></li>
+            <li><a href="#">Infographics</a></li>
+            <li><a href="#">Digital Specials</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-link-box">
+          <strong>Highlights</strong>
+          <ul>
+            <li><a href="#">Livestream</a></li>
+            <li><a href="#">Fact Check</a></li>
+            <li><a href="#">TTV Corner</a></li> 
+          </ul>
+        </div>
+
+        <div class="footer-subscribe">
+          <strong>Subscribe Now</strong>
+          <div class="subscribe-box">
+            <input type="email" placeholder="Example@gmail.com" required />
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <!--footer container end-->
+
+      <!--bottom-footer-->
+      <div class="footer-bottom">
+        <span class="footer-owner">Made By DennyDespot</span>
+        <span class="copyright">© Copyright 2024</span>
+      </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

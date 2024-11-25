@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TTV</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut-icon" href="images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  </head>
+  <body>
+
+    <nav class="navigation">
+      <a href="main.html" onclick="closeModal()" class="logo">
+        <img src="images/TTV-logo.png" alt="logo" />
+      </a>
+
+      <input type="checkbox" class="menu-btn" id="menu-btn">
+      <label for="menu-btn" class="menu-icon">
+        <span class="nav-icon"></span>
+      </label>
+
+      <ul class="menu">
+        <li><a href="#">Tanks</a></li>
+        <li><a href="#">Tankfest 2024</a></li>
+        <li><a href="#">About Us</a></li>
+    </ul>
+
+      <div class="nav-btns">
+        <!-- Search Box -->
+        <input type="checkbox" id="nav-search-btn" />
+        <label for="nav-search-btn" class="nav-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <form action="">
+            <!--close-->
+            <label for="nav-search-btn" class="nav-search-close">
+              <i class="fa-solid fa-xmark"></i>
+            </label>
+            <div class="nav-search-box">
+              <input type="text" placeholder="Search Topic" required />
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </form>
+        </label>
+        
+        <div class="userDropdown">
+
+          <button onclick="userDropDown()" class="userDropbtn">
+            <i class="fa-solid fa-user"></i>
+          </button>
+      
+          <div id="userDropdown" class="userDropdown-content">
+
+            <div class="dropdown-link-box">
+                <div class="dropdown-links">
+                  <ul>
+                    <li><button><a href="#">Profile</a></li></button>
+                    <li><button><a href="#">Settings</a></li></button>
+                    <li><button id="logoutBtn">Logout</button></li>
+                  </ul>
+                </div>
+            </div> 
+        </div>
+      </div>
+
+    </nav>
+    <!--navigation-end-->
+
+<!--main-news-->
+<section id="news-details">
+  <div class="main-news-text">
+
+    <span class="category">Tank News</span>
+    <strong>Australia gives 49 aging Abrams tanks to Ukraine</strong>
+
+    <div class="main-news-img">
+      <img src="images/r-news-1.webp">
+    </div>
+    <p>In this photo released by Australian Department of Defence, an Australian Army trooper fires the .50 cal 
+      heavy machine gun from an Australian Army M1A1 Abrams Main Battle Tank during Exercise Gauntlet Strike at 
+      the Puckapunyal Military Area in Victoria, Australia, on June 26, 2024. (CPL Johnny Huang/Australian Department 
+      of Defence via AP)</p>
+
+    <div class="m-news-text">
+      <span class="m-box-details">
+
+        MELBOURNE, Australia (AP) — Australia will give 49 of its aging M1A1 Abrams tanks to Ukraine months after Kyiv 
+        requested the redundant fleet, Defense Minister Richard Marles said Thursday.
+
+        <br>
+        <br>
+        The Australian government was giving Ukraine most of its American-made M1A1 tanks, which are valued at 
+        245 million Australian dollars ($163 million), Marles said. They will be replaced in Australia by a fleet 
+        of 75 next-generation M1A2 tanks.
+         
+        <br>
+        <br>
+        In February, Marles said that giving Ukraine the tanks as they were phased out was not on his government’s agenda. 
+        But on Thursday he said he did not regard the donation as a backflip on his government’s previous position.
+
+        <br>
+        <br>
+        “We talk with the Ukrainian government consistently around how best we can support them,” Marles told Australian 
+        Broadcasting Corp.
+
+        <br>
+        <br>
+        “We look at the material that we have; its effectiveness, ... the shape that it’s in, to be frank, whether it would 
+        be able to make a difference, whether it can be sustained and maintained so that it can be kept in the fight. And the 
+        Abrams tanks fit all of those criteria,” he added.
+
+        <br>
+        <br>
+        The United States provided the necessary permission for Australia to transfer the tanks to Ukraine as required 
+        under U.S. International Traffic in Arms Regulations, Defense Industry and Capability Delivery Minister Pat Conroy said.
+
+        <br>
+        <br>
+        “We are working very closely with our U.S. allies on the donation of these tanks,” Conroy said.
+
+        <br>
+        <br>
+        The United States agreed to send 31 Abrams tanks to Ukraine in January 2023 after an aggressive monthslong campaign by 
+        Kyiv arguing that the tanks were vital to its ability to breach Russian lines.
+
+        <br>
+        <br>
+        Conroy said Australia placed no specific conditions on how Ukraine used the tanks or on whether they crossed the Russian border.
+
+        <br>
+        <br>
+        “Our long-standing principle is as long as they are used according to the international rules of law, there are no other conditions,” 
+        Conroy said.
+
+      </span>
+    </div>
+
+  </div>
+
+</section><!--news-details-end-->
+
+    <!--footer-->
+    <footer>
+      <!--footer container start-->
+      <div class="footer-container">
+
+        <!--LINK-->
+        <div class="footer-link-box">
+          <strong>Sections</strong>
+          <div class="footer-links">
+            <ul>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Entertainment</a></li>
+              <li><a href="#">Tank Designs</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-link-box">
+          <strong>Multimedia</strong>
+          <ul>
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Slideshows</a></li>
+            <li><a href="#">Infographics</a></li>
+            <li><a href="#">Digital Specials</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-link-box">
+          <strong>Highlights</strong>
+          <ul>
+            <li><a href="#">Livestream</a></li>
+            <li><a href="#">Fact Check</a></li>
+            <li><a href="#">TTV Corner</a></li> 
+          </ul>
+        </div>
+
+        <div class="footer-subscribe">
+          <strong>Subscribe Now</strong>
+          <div class="subscribe-box">
+            <input type="email" placeholder="Example@gmail.com" required />
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <!--footer container end-->
+
+      <!--bottom-footer-->
+      <div class="footer-bottom">
+        <span class="footer-owner">Made By DennyDespot</span>
+        <span class="copyright">© Copyright 2024</span>
+      </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TTV</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut-icon" href="images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  </head>
+  <body>
+
+    <nav class="navigation">
+      <a href="main.html" onclick="closeModal()" class="logo">
+        <img src="images/TTV-logo.png" alt="logo" />
+      </a>
+
+      <input type="checkbox" class="menu-btn" id="menu-btn">
+      <label for="menu-btn" class="menu-icon">
+        <span class="nav-icon"></span>
+      </label>
+
+      <ul class="menu">
+        <li><a href="#">Tanks</a></li>
+        <li><a href="#">Tankfest 2024</a></li>
+        <li><a href="#">About Us</a></li>
+    </ul>
+
+      <div class="nav-btns">
+        <!-- Search Box -->
+        <input type="checkbox" id="nav-search-btn" />
+        <label for="nav-search-btn" class="nav-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <form action="">
+            <!--close-->
+            <label for="nav-search-btn" class="nav-search-close">
+              <i class="fa-solid fa-xmark"></i>
+            </label>
+            <div class="nav-search-box">
+              <input type="text" placeholder="Search Topic" required />
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </form>
+        </label>
+        
+        <div class="userDropdown">
+
+          <button onclick="userDropDown()" class="userDropbtn">
+            <i class="fa-solid fa-user"></i>
+          </button>
+      
+          <div id="userDropdown" class="userDropdown-content">
+
+            <div class="dropdown-link-box">
+                <div class="dropdown-links">
+                  <ul>
+                    <li><button><a href="#">Profile</a></li></button>
+                    <li><button><a href="#">Settings</a></li></button>
+                    <li><button id="logoutBtn">Logout</button></li>
+                  </ul>
+                </div>
+            </div> 
+        </div>
+      </div>
+
+    </nav>
+    <!--navigation-end-->
+
+<!--main-news-->
+<section id="news-details">
+  <div class="main-news-text">
+
+    <span class="category">Tank Blogs</span>
+    <strong>T-90 - Russian MBT</strong>
+
+    <div class="main-news-img">
+      <img src="images/page2-1.jpg">
+    </div>
+    <p>A Russian Army T-90M main battle tank</p>
+
+    <div class="m-news-text">
+      <span class="m-box-details">
+        The T-90 is a third-generation Russian main battle tank developed from, and designed to replace the T-72. 
+        It uses a 125 mm 2A46 smoothbore main gun, the 1A45T fire-control system, an upgraded engine, and gunner's 
+        thermal sight. 
+        <br>
+        <br>
+        Standard protective measures include a blend of steel and composite armour, smoke grenade 
+        dischargers, Kontakt-5 explosive reactive armour (ERA) and the Shtora infrared anti-tank guided missile 
+        (ATGM) jamming system.
+         
+        <div class="main-news-img">
+          <img src="images/page2-2.jpg">
+        </div>
+        <p>A Russian specification T-90A. The new welded turret with its angular geometry is clearly visible</p>
+
+        <br>
+        The T-90 has its origins in a Soviet-era program aimed at developing a replacement for the T-64, T-72 and 
+        T-80 series of main battle tanks (MBT). The T-72 platform was selected as the basis for the new generation 
+        of tank owing to its cost-effectiveness, simplicity and automotive qualities.
+
+        <br>
+        <br>
+        The Kartsev-Venediktov Design Bureau from Nizhny Tagil was responsible for the design work and prepared 
+        two parallel proposals—the Object 188, which was a relatively simple upgrade of the existing T-72B tank 
+        (Object 184), and the far more advanced Object 187—only vaguely related to the T-72 series and incorporating 
+        major improvements to the hull and turret design, armor, powerplant and armament.
+
+        <div class="main-news-img">
+          <img src="images/page2-3.jpg">
+        </div>
+        <p>A T-90A tank firing its main gun at Engineering Technologies 2012</p>
+
+        <br>
+        Development work was approved in 1986 and the first prototypes were completed by 1988. The vehicles 
+        resulting from the Object 187 program have not been declassified to this date.
+        <br>
+        <br>
+        The Object 188 was engineered by a team under V.N. Venediktov. The biggest change was the integration 
+        of the 1A45 fire-control system of the T-80U. The Object 188 was initially designated as the T-72BM.
+        <br>
+        <br>
+        The first four of these were delivered for trials in January 1989. An improved variant (called Upgraded T-72B) 
+        was delivered beginning in June 1990. In March 1991, the Soviet Ministry of Defense recommended that the Army 
+        adopt the Object 188. Work on the Object 187 was simultaneously stopped for unknown reasons.
+
+      </span>
+    </div>
+
+  </div>
+
+</section><!--news-details-end-->
+
+    <!--footer-->
+    <footer>
+      <!--footer container start-->
+      <div class="footer-container">
+
+        <!--LINK-->
+        <div class="footer-link-box">
+          <strong>Sections</strong>
+          <div class="footer-links">
+            <ul>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Entertainment</a></li>
+              <li><a href="#">Tank Designs</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-link-box">
+          <strong>Multimedia</strong>
+          <ul>
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Slideshows</a></li>
+            <li><a href="#">Infographics</a></li>
+            <li><a href="#">Digital Specials</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-link-box">
+          <strong>Highlights</strong>
+          <ul>
+            <li><a href="#">Livestream</a></li>
+            <li><a href="#">Fact Check</a></li>
+            <li><a href="#">TTV Corner</a></li> 
+          </ul>
+        </div>
+
+        <div class="footer-subscribe">
+          <strong>Subscribe Now</strong>
+          <div class="subscribe-box">
+            <input type="email" placeholder="Example@gmail.com" required />
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <!--footer container end-->
+
+      <!--bottom-footer-->
+      <div class="footer-bottom">
+        <span class="footer-owner">Made By DennyDespot</span>
+        <span class="copyright">© Copyright 2024</span>
+      </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

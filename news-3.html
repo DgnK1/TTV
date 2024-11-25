@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TTV</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut-icon" href="images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  </head>
+  <body>
+
+    <nav class="navigation">
+      <a href="main.html" onclick="closeModal()" class="logo">
+        <img src="images/TTV-logo.png" alt="logo" />
+      </a>
+
+      <input type="checkbox" class="menu-btn" id="menu-btn">
+      <label for="menu-btn" class="menu-icon">
+        <span class="nav-icon"></span>
+      </label>
+
+      <ul class="menu">
+        <li><a href="#">Tanks</a></li>
+        <li><a href="#">Tankfest 2024</a></li>
+        <li><a href="#">About Us</a></li>
+    </ul>
+
+      <div class="nav-btns">
+        <!-- Search Box -->
+        <input type="checkbox" id="nav-search-btn" />
+        <label for="nav-search-btn" class="nav-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <form action="">
+            <!--close-->
+            <label for="nav-search-btn" class="nav-search-close">
+              <i class="fa-solid fa-xmark"></i>
+            </label>
+            <div class="nav-search-box">
+              <input type="text" placeholder="Search Topic" required />
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </form>
+        </label>
+        
+        <div class="userDropdown">
+
+          <button onclick="userDropDown()" class="userDropbtn">
+            <i class="fa-solid fa-user"></i>
+          </button>
+      
+          <div id="userDropdown" class="userDropdown-content">
+
+            <div class="dropdown-link-box">
+                <div class="dropdown-links">
+                  <ul>
+                    <li><button><a href="#">Profile</a></li></button>
+                    <li><button><a href="#">Settings</a></li></button>
+                    <li><button id="logoutBtn">Logout</button></li>
+                  </ul>
+                </div>
+            </div> 
+        </div>
+      </div>
+
+    </nav>
+    <!--navigation-end-->
+
+<!--main-news-->
+<section id="news-details">
+  <div class="main-news-text">
+
+    <span class="category">Tank News</span>
+    <strong>Ukraine got America's top tank without the latest and greatest armor upgrades, 
+      which are 'top secret,' but it's adding its own</strong>
+
+    <div class="m-news-text">
+      <span class="m-box-details">
+
+        Ukraine is adding more protection to its US-provided Abrams tanks as it tries to fight back against Russia. 
+        These are top tanks, but they came without the top armor upgrades.
+
+        <br>
+        <br>
+        The US started sending Abrams tanks to Ukraine in fall 2023, and altogether it has sent 31 of them. 
+        These tanks are considered the best in Ukraine and among the best in the world, but Ukraine didn't receive 
+        the newest version with all the best bells and whistles.
+         
+        <br>
+        <br>
+        The US, for example, sent the tanks without their most capable armor upgrades. The tanks were older variants, 
+        and also the US, per policy requirements, downgrades export models to protect its sensitive technology.
+
+        <br>
+        <br>
+        In a brutal war in which combat vehicles are often the target of artillery and drones, among other threats, 
+        Ukraine's tanks need all the protection they can get, though. So Ukraine is now beefing up the Abrams and other 
+        American vehicles with extra armor to boost survivability.
+
+        <br>
+        <br>
+        Nicholas Drummond, a former British Army officer who now works as a land warfare analyst, told Business Insider 
+        "the depleted-uranium armor the Americans use is top secret, and the last thing they want is that falling into 
+        Russian hands." But without top armor, Ukraine needs to come up with its own solutions, he said.
+
+        <h2>Designing new protection</h2>
+
+        The tanks that Ukraine received from Western allies, as well as its arsenal of Soviet tanks, have repeatedly 
+        been seen with new types of armor added on, specifically cage armor.
+
+        <br>
+        <br>
+        A Ukrainian company has made new protective shields for the Abrams and for Bradley infantry fighting vehicles.
+
+        <br>
+        <br>
+        Col. Hamish de Bretton-Gordon, a former commander for the UK's Joint Chemical, Biological, Radiological and 
+        Nuclear forces, described these innovations to BI as "very, very simple, but actually quite effective."
+
+        <div class="main-news-img">
+          <img src="images/r-news-3.jpg">
+        </div>
+        <p>A Ukrainian tank with an added cage near the Russian border in northern Ukraine in August 2024.ROMAN PILIPEY via Getty Images</p>
+
+        <br>
+        He described the add-ons as necessary because "the Americans took off some of the secret armor," a change which 
+        makes "them more vulnerable to direct fire."
+
+        <br>
+        <br>
+        It's unclear how effective the more advanced armor would be against the mass use of exploding drones, 
+        but the greater protection would still aid Ukraine against the proliferation of different Russian threats 
+        facing armor on the battlefield.
+
+        <br>
+        <br>
+        The US' own Abrams tanks have composite armor that includes depleted uranium, an often misunderstood 
+        material that is also used in tank rounds. The details of the armor are kept secret.
+
+      </span>
+    </div>
+
+  </div>
+
+</section><!--news-details-end-->
+
+    <!--footer-->
+    <footer>
+      <!--footer container start-->
+      <div class="footer-container">
+
+        <!--LINK-->
+        <div class="footer-link-box">
+          <strong>Sections</strong>
+          <div class="footer-links">
+            <ul>
+              <li><a href="main.html">News</a></li>
+              <li><a href="#">Entertainment</a></li>
+              <li><a href="#">Tank Designs</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-link-box">
+          <strong>Multimedia</strong>
+          <ul>
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Slideshows</a></li>
+            <li><a href="#">Infographics</a></li>
+            <li><a href="#">Digital Specials</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-link-box">
+          <strong>Highlights</strong>
+          <ul>
+            <li><a href="#">Livestream</a></li>
+            <li><a href="#">Fact Check</a></li>
+            <li><a href="#">TTV Corner</a></li> 
+          </ul>
+        </div>
+
+        <div class="footer-subscribe">
+          <strong>Subscribe Now</strong>
+          <div class="subscribe-box">
+            <input type="email" placeholder="Example@gmail.com" required />
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <!--footer container end-->
+
+      <!--bottom-footer-->
+      <div class="footer-bottom">
+        <span class="footer-owner">Made By DennyDespot</span>
+        <span class="copyright">© Copyright 2024</span>
+      </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

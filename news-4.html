@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TTV</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut-icon" href="images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  </head>
+  <body>
+
+    <nav class="navigation">
+      <a href="main.html" onclick="closeModal()" class="logo">
+        <img src="images/TTV-logo.png" alt="logo" />
+      </a>
+
+      <input type="checkbox" class="menu-btn" id="menu-btn">
+      <label for="menu-btn" class="menu-icon">
+        <span class="nav-icon"></span>
+      </label>
+
+      <ul class="menu">
+        <li><a href="#">Tanks</a></li>
+        <li><a href="#">Tankfest 2024</a></li>
+        <li><a href="#">About Us</a></li>
+    </ul>
+
+      <div class="nav-btns">
+        <!-- Search Box -->
+        <input type="checkbox" id="nav-search-btn" />
+        <label for="nav-search-btn" class="nav-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <form action="">
+            <!--close-->
+            <label for="nav-search-btn" class="nav-search-close">
+              <i class="fa-solid fa-xmark"></i>
+            </label>
+            <div class="nav-search-box">
+              <input type="text" placeholder="Search Topic" required />
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </form>
+        </label>
+        
+        <div class="userDropdown">
+
+          <button onclick="userDropDown()" class="userDropbtn">
+            <i class="fa-solid fa-user"></i>
+          </button>
+      
+          <div id="userDropdown" class="userDropdown-content">
+
+            <div class="dropdown-link-box">
+                <div class="dropdown-links">
+                  <ul>
+                    <li><button><a href="#">Profile</a></li></button>
+                    <li><button><a href="#">Settings</a></li></button>
+                    <li><button id="logoutBtn">Logout</button></li>
+                  </ul>
+                </div>
+            </div> 
+        </div>
+      </div>
+
+    </nav>
+    <!--navigation-end-->
+
+<!--main-news-->
+<section id="news-details">
+  <div class="main-news-text">
+
+    <span class="category">Tank News</span>
+    <strong>KNDS Wins Sustainment Contract for Canadian Army’s Leopard 2 Fleet</strong>
+
+    <div class="m-news-text">
+      <span class="m-box-details">
+
+        German defense contractor KNDS has signed an agreement to maintain the Canadian Army’s Leopard 2 main battle tanks.
+
+        <br>
+        The 600-million-euro ($669.7-million) deal includes management, spare parts supply and repairs, and 
+        accompanying technical support services to the fleet.
+
+        <br>
+        KNDS will also support the construction of a sustainment facility in the country to bolster future overhaul 
+        projects for the vehicles.
+
+        <br>
+        Canada’s procurement authority is partnering with KNDS segments in Munich and Ottawa to complete the effort.
+
+        <br>
+        Work for the agreement will be facilitated from September 2024 through March 2031, with an 
+        option for five additional years.
+
+        <br>
+        “As a system house and manufacturer of the LEOPARD 2, we have felt a strong connection with Canada and 
+        the Canadian Army for almost 20 years,” KNDS Deutschland Service Head Markus Schmidt stated.
+
+        <br>
+        “For KNDS, the contract for long-term support of the systems is an honor. We are aware of the responsibility 
+        of ensuring the operational readiness of 74 LEOPARD 2 battle tanks and 29 family vehicles.”
+
+        <h2>The Leopard 2 Main Battle Tank</h2>
+
+        The Leopard 2 measures 10 meters (33 feet) and is protected with armor composed of steel, tungsten, 
+        plastic, and ceramic parts.
+
+        <br>
+        It is equipped with a smooth-bore gun, medium machine guns, multi-barrel grenade launchers, and explosives.
+
+        <div class="main-news-img">
+          <img src="images/r-news-4.jpg">
+        </div>
+        <p>A Canadian Leopard 2 tank being loaded in a Boeing C-17 Globemaster military transport aircraft. 
+          Photo: Canadian Defense Minister Anita Anand via Twitter</p>
+
+        <br>
+        The tank is powered by a NATO-standard V12 diesel engine for a top speed of 68 kilometers (42 miles) per 
+        hour and a range of 340 kilometers (211 miles).
+
+        <br>
+        Canada first adopted the vehicle in 2007 to replace its older main battle tank fleet, 
+        operational since the 1970s.
+
+        <br>
+        Currently, five variants of the Leopard 2 are in service under Ottawa’s military.
+
+      </span>
+    </div>
+
+  </div>
+
+</section><!--news-details-end-->
+
+    <!--footer-->
+    <footer>
+      <!--footer container start-->
+      <div class="footer-container">
+
+        <!--LINK-->
+        <div class="footer-link-box">
+          <strong>Sections</strong>
+          <div class="footer-links">
+            <ul>
+              <li><a href="main.html">News</a></li>
+              <li><a href="#">Entertainment</a></li>
+              <li><a href="#">Tank Designs</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-link-box">
+          <strong>Multimedia</strong>
+          <ul>
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Slideshows</a></li>
+            <li><a href="#">Infographics</a></li>
+            <li><a href="#">Digital Specials</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-link-box">
+          <strong>Highlights</strong>
+          <ul>
+            <li><a href="#">Livestream</a></li>
+            <li><a href="#">Fact Check</a></li>
+            <li><a href="#">TTV Corner</a></li> 
+          </ul>
+        </div>
+
+        <div class="footer-subscribe">
+          <strong>Subscribe Now</strong>
+          <div class="subscribe-box">
+            <input type="email" placeholder="Example@gmail.com" required />
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <!--footer container end-->
+
+      <!--bottom-footer-->
+      <div class="footer-bottom">
+        <span class="footer-owner">Made By DennyDespot</span>
+        <span class="copyright">© Copyright 2024</span>
+      </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

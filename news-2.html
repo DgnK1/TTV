@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TTV</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut-icon" href="images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  </head>
+  <body>
+
+    <nav class="navigation">
+      <a href="main.html" onclick="closeModal()" class="logo">
+        <img src="images/TTV-logo.png" alt="logo" />
+      </a>
+
+      <input type="checkbox" class="menu-btn" id="menu-btn">
+      <label for="menu-btn" class="menu-icon">
+        <span class="nav-icon"></span>
+      </label>
+
+      <ul class="menu">
+        <li><a href="#">Tanks</a></li>
+        <li><a href="#">Tankfest 2024</a></li>
+        <li><a href="#">About Us</a></li>
+    </ul>
+
+      <div class="nav-btns">
+        <!-- Search Box -->
+        <input type="checkbox" id="nav-search-btn" />
+        <label for="nav-search-btn" class="nav-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <form action="">
+            <!--close-->
+            <label for="nav-search-btn" class="nav-search-close">
+              <i class="fa-solid fa-xmark"></i>
+            </label>
+            <div class="nav-search-box">
+              <input type="text" placeholder="Search Topic" required />
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </form>
+        </label>
+        
+        <div class="userDropdown">
+
+          <button onclick="userDropDown()" class="userDropbtn">
+            <i class="fa-solid fa-user"></i>
+          </button>
+      
+          <div id="userDropdown" class="userDropdown-content">
+
+            <div class="dropdown-link-box">
+                <div class="dropdown-links">
+                  <ul>
+                    <li><button><a href="#">Profile</a></li></button>
+                    <li><button><a href="#">Settings</a></li></button>
+                    <li><button id="logoutBtn">Logout</button></li>
+                  </ul>
+                </div>
+            </div> 
+        </div>
+      </div>
+
+    </nav>
+    <!--navigation-end-->
+
+<!--main-news-->
+<section id="news-details">
+  <div class="main-news-text">
+
+    <span class="category">Tank News</span>
+    <strong>Australia gives 49 aging Abrams tanks to Ukraine</strong>
+
+    <div class="main-news-img">
+      <img src="images/r-news-2.jpg">
+    </div>
+    <p>Indian SHELL 125 MM HE1A shells for Ukrainian tank crews. September 2024, Ukraine. Frame from Army TV video</p>
+
+    <div class="m-news-text">
+      <span class="m-box-details">
+
+        Polish PT-91 Twardy tanks in service with Ukraine use Indian shells to fire at Russians.
+
+        <br>
+        <br>
+        The Army TV channel released footage of the tank crews of the 117th Mechanized Brigade using these shells. 
+        It was noticed by an Indian user of the social network X (ex-Twitter) under the nickname Dany (@wartrophy_414), 
+        who follows various military news related to India.
+         
+        <br>
+        <br>
+        The brigade has been using Polish PT-91 and other tanks for a long time.
+
+        <br>
+        <br>
+        Usually, the brigade’s tanks engage the enemy from closed positions or mainly fire at Russian infantry.
+
+        <iframe class="video-frame"
+        src="https://www.youtube.com/embed/BU1F5UUbQP4?playlist=BU1F5UUbQP4&loop=1&autoplay=1&mute=1">
+        </iframe>
+
+        <br>
+        For this purpose, the brigade’s tanks are equipped with Indian SHELL 125 MM HE1A shells, which have a 
+        characteristic yellow color and English inscriptions.
+
+        <br>
+        <br>
+        This 125mm tank ammunition is produced by the Indian company Munitions India Limited.
+
+        <div class="main-news-img">
+          <img src="images/news-2-1.jpg">
+        </div>
+        <p>Indian SHELL 125 MM HE1A shells for Ukrainian tank crews. September 2024, Ukraine. Frame from Army TV video</p>
+
+        <br>
+        They are a copy of the Soviet-era 3OF19 projectiles designed in the 1960s.
+
+        <br>
+        <br>
+        Despite the age of its development, the projectile is still relevant due to its simple design and high power.
+
+        <br>
+        <br>
+        The 90% lethal zone for infantry in the event of a detonation is 40 meters wide and 20 meters deep from the point 
+        of rupture in the direction of the shot.
+
+        <div class="main-news-img">
+          <img src="images/news-2-2.jpg">
+        </div>
+        <p>A box from an Indian SHELL 125 MM HE1A in Ukraine. Photo credits: reibert.info</p>
+
+        <br>
+        The Indian-made tank shell weighs 23 kilograms and is loaded with a 60:40 ratio of hexogen and TNT. The explosive 
+        weighs 3.4 kilograms.
+
+        <br>
+        <br>
+        As previously reported, the Armed Forces of Ukraine have received at least 60 Polish PT-91 Twardy tanks.
+
+        <div class="main-news-img">
+          <img src="images/news-2-3.jpg">
+        </div>
+        <p>Tank PT-91 Twardy of the 117th Mechanized Brigade. January 2024. Ukraine. Photo credits: 10th Army Corps</p>
+
+        <br>
+        The PT-91 main battle tank of the Polish army was made on the basis of the licensed version of the Soviet Т-72М1 MBT.
+
+      </span>
+    </div>
+
+  </div>
+
+</section><!--news-details-end-->
+
+    <!--footer-->
+    <footer>
+      <!--footer container start-->
+      <div class="footer-container">
+
+        <!--LINK-->
+        <div class="footer-link-box">
+          <strong>Sections</strong>
+          <div class="footer-links">
+            <ul>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Entertainment</a></li>
+              <li><a href="#">Tank Designs</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-link-box">
+          <strong>Multimedia</strong>
+          <ul>
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Slideshows</a></li>
+            <li><a href="#">Infographics</a></li>
+            <li><a href="#">Digital Specials</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-link-box">
+          <strong>Highlights</strong>
+          <ul>
+            <li><a href="#">Livestream</a></li>
+            <li><a href="#">Fact Check</a></li>
+            <li><a href="#">TTV Corner</a></li> 
+          </ul>
+        </div>
+
+        <div class="footer-subscribe">
+          <strong>Subscribe Now</strong>
+          <div class="subscribe-box">
+            <input type="email" placeholder="Example@gmail.com" required />
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <!--footer container end-->
+
+      <!--bottom-footer-->
+      <div class="footer-bottom">
+        <span class="footer-owner">Made By DennyDespot</span>
+        <span class="copyright">© Copyright 2024</span>
+      </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

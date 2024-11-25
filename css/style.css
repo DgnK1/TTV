@@ -364,6 +364,13 @@ a:hover {
     align-items: flex-start;
 }
 
+.collection .news-heading {
+    background-color: #f5f5f5;
+    border: 1px solid rgb(236, 236, 236);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
 .r-collection-text .collection-box-p-name,
 .collection-text .collection-box-p-name {
     color: #313131;
@@ -386,6 +393,88 @@ a:hover {
     text-decoration: none;
 }
 
+/*News Boxes*/
+.related-news {
+    max-width: 1200px;
+    width: 90%;
+    margin: 50px auto;
+}
+
+.related-news .news-heading {
+    background-color: #f5f5f5;
+    border: 1px solid rgb(236, 236, 236);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.news-heading a {
+    color: #a7a7a7;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.r-news-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 8px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.r-news-box {
+    max-width: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid #dfdfdf;
+    padding: 20px 10px;
+    transition: all ease 0.3s;
+}
+
+.r-news-box:hover {
+    box-shadow: 2px 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.r-news-box .r-news-img {
+    width: 90%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.r-news-box .r-news-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.r-news-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.r-news-text .news-box-p-name,
+.news-box-p-name {
+    text-decoration: none;
+    color: #313131;
+    font-size: 1rem;
+    font-weight: 600;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 
 /* NEWS details */
 #news-details {
@@ -403,8 +492,8 @@ a:hover {
 }
 
 .main-news-img img {
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     object-fit: fill;
     object-position: center;
 }
@@ -431,6 +520,7 @@ a:hover {
     color: #bbbbbb;
     font-size: 0.9rem;
     line-height: 1;
+    text-align: justify;
 }
 
 .m-news-text {
@@ -512,6 +602,7 @@ footer {
 .footer-link-box ul li a {
     color: #b8b8b8;
     text-decoration: none;
+    font-weight: 500;
 }
 
 .footer-link-box ul li a:hover {
